@@ -1,6 +1,9 @@
 /* Space out content a bit */
 body {
-    padding-top: 20px;
+    background-image: url(BrigisCrowd.png);
+    background-repeat: no-repeat;
+    background-position: top, left;
+    padding-top: 200px;
     padding-bottom: 20px;
   }
   
@@ -19,9 +22,11 @@ body {
   }
   /* Make the masthead heading the same height as the navigation */
   .header h3 {
+    color: hsl(15, 75%, 45%);
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
+    text-align: center;
   }
   
   /* Custom page footer */
@@ -45,6 +50,23 @@ body {
   .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    position: relative;
+  }
+
+  .jumbotron h2{
+    color:black;
+  }
+
+  .jumbotron:after {
+    content:'';
+    display: block;
+    width: 80%;
+    height: 100px;
+    box-shadow: 0 2px 120px rgba(0, 0, 0, 0.562);
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
   }
   .jumbotron .btn {
     padding: 14px 24px;
@@ -75,5 +97,9 @@ body {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
       border-bottom: 0;
+    }
+
+    .form-group {
+      color: black;
     }
   }
